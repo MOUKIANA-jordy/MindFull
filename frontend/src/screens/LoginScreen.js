@@ -15,7 +15,7 @@ const LoginScreen = ({ navigation }) => {
   };
 
   return (
-    <ImageBackground source={require("../assets/background.png")} style={styles.background}>
+    <ImageBackground source={require("../atouts/ImageBackground.png")} style={styles.background}>
      <View style={styles.container}>
         <TextInput
           style={styles.input}
@@ -58,9 +58,8 @@ const LoginScreen = ({ navigation }) => {
       justifyContent: "center",
       alignItems: "center",
       paddingHorizontal: 20,
-      backgroundColor: "#f9f9f9",
   },
-      background: {
+      ImageBackground: {
         flex: 1,
       width: "100%",
       height: "100%",
@@ -100,4 +99,5 @@ const LoginScreen = ({ navigation }) => {
 });
 
       export default LoginScreen;
+
 
