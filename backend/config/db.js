@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 dotenv.config(); // Charger les variables d'environnement
 
 const sequelize = new Sequelize(
-  process.env.DB_NAME || 'MindFull_db',
+  process.env.DB_NAME || 'mindfull_db',
   process.env.DB_USER || 'root',
   process.env.DB_PASS || 'jordy',
   {

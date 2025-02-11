@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, Button, StyleSheet, Alert } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert } from 'react-native';
 
 const RegisterScreen = ({ navigation }) => {
   const [email, setEmail] = useState('');
@@ -41,7 +41,9 @@ const RegisterScreen = ({ navigation }) => {
         secureTextEntry
         onChangeText={setConfirmPassword}
       />
-      <Button title="Créer un compte" onPress={handleRegister} />
+      <TouchableOpacity style={styles.button} onPress={handleRegister}>
+        <Text style={styles.buttonText}>creer un compte</Text>
+      </TouchableOpacity>
     </View>
   );
 };
