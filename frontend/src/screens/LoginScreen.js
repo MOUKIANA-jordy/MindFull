@@ -15,7 +15,7 @@ const LoginScreen = ({ navigation }) => {
   };
 
   return (
-    <ImageBackground source={require("../atouts/ImageBackground.png")} style={styles.background}>
+    <ImageBackground source={require("../atouts/ImageBackground.png")} style={styles.background}  resizeMode="cover">
      <View style={styles.container}>
         <TextInput
           style={styles.input}
@@ -57,10 +57,12 @@ const LoginScreen = ({ navigation }) => {
         flex: 1,
       justifyContent: "center",
       alignItems: "center",
-      paddingHorizontal: 20,
+      paddingHorizontal: 0,
   },
       ImageBackground: {
-        flex: 1,
+      position: "absolute h-screen",
+      top: 0,
+      left: 0,
       width: "100%",
       height: "100%",
   },

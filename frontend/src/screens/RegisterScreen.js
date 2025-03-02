@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity,ImageBackground, StyleSheet, Alert } from 'react-native';
 
 const RegisterScreen = ({ navigation }) => {
   const [email, setEmail] = useState('');
@@ -19,6 +19,7 @@ const RegisterScreen = ({ navigation }) => {
   };
 
   return (
+    <ImageBackground source={require("../atouts/ImageBackground.png")} style={styles.background}  resizeMode="cover">
     <View style={styles.container}>
       <Text style={styles.title}>Créer un compte</Text>
       <TextInput
@@ -45,6 +46,7 @@ const RegisterScreen = ({ navigation }) => {
         <Text style={styles.buttonText}>creer un compte</Text>
       </TouchableOpacity>
     </View>
+    </ImageBackground>
   );
 };
 
@@ -54,7 +56,13 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     paddingHorizontal: 20,
-    backgroundColor: '#f9f9f9',
+  },
+  ImageBackground: {
+    position: "absolute h-screen",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
   },
   title: {
     fontSize: 24,
