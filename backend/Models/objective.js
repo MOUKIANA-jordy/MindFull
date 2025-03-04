@@ -1,9 +1,9 @@
 // models/Goal.js
 import { DataTypes } from "sequelize";
 import { sequelize } from "../config/db.js";
-import User from "./User.js"; // Relation avec User
+import User from "./User.js";
 
-const Obj = sequelize.define("Obj", {
+const Objective = sequelize.define("Objective", {
   id: {
     type: DataTypes.INTEGER,
     autoIncrement: true,
@@ -18,6 +18,6 @@ const Obj = sequelize.define("Obj", {
 });
 
 // Définir la relation avec l'utilisateur
-Goal.belongsTo(User, { foreignKey: "userId" });
+Objective.belongsTo(User, { foreignKey: "userId" });
 
-export default Obj;
+export default Objective;

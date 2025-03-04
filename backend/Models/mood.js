@@ -1,7 +1,7 @@
 // models/Mood.js
 import { DataTypes } from "sequelize";
 import { sequelize } from "../config/db.js";
-import User from "./User.js"; // Relation avec User
+import User from "./User.js";
 
 const Mood = sequelize.define("Mood", {
   id: {
