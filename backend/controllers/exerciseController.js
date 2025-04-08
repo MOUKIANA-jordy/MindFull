@@ -1,6 +1,6 @@
 import Exercise from "../Models/exercise.js";
 
-// 🔹 Récupérer la liste des exercices
+// Récupérer la liste des exercices
 export const getExercises = async (req, res) => {
   try {
     const exercises = await Exercise.findAll();
@@ -10,7 +10,7 @@ export const getExercises = async (req, res) => {
   }
 };
 
-// 🔹 Ajouter un nouvel exercice
+//  Ajouter un nouvel exercice
 export const addExercise = async (req, res) => {
   try {
     const { name, description } = req.body;

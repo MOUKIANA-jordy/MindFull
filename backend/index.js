@@ -21,7 +21,7 @@ app.use(cors());
 // Définition des routes avec `Router`
 app.use("/api/auth", authRoutes);
 app.use("/api/mood", moodRoutes);
-app.use("/api/exercises", exerciseRoutes);
+app.use("/api/exercise", exerciseRoutes);
 app.use("/api/objective", objectiveRoutes);
 
 // Test de la connexion Sequelize
@@ -50,7 +50,7 @@ sequelize.sync({ force: false })
 
 // route principale
 app.get("/", (req,res)=>{
-    res.send("Server MindPulse is ready")
+    res.send("Server MindFull is ready")
 })
 
 app.get("/api/user",(req,res)=>{

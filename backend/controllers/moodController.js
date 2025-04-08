@@ -26,7 +26,7 @@ export const trackMood = async (req, res) => {
   }
 };
 
-// 🔹 Obtenir toutes les humeurs d'un utilisateur
+//  Obtenir toutes les humeurs d'un utilisateur
 export const getMoodHistory = async (req, res) => {
   try {
     const { userId } = req.params;

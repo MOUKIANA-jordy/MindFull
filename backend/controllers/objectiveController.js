@@ -1,7 +1,7 @@
 import Objective from "../Models/objective.js";
 import User from "../Models/User.js";
 
-// 🔹 Récupérer les objectifs d'un utilisateur
+//  Récupérer les objectifs d'un utilisateur
 export const getobjective = async (req, res) => {
   try {
     const { userId } = req.params;
@@ -19,7 +19,7 @@ export const getobjective = async (req, res) => {
   }
 };
 
-// 🔹 Ajouter un nouvel objective
+//  Ajouter un nouvel objective
 export const addobjective = async (req, res) => {
   try {
     const { userId, objective } = req.body;
